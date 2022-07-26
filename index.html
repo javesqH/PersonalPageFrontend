@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" 
+      rel="stylesheet"> 
+    <title>Pagina Personal</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>Javier Esquivel Fronted Dev</h1>
+        <h1 class="center">Javier Esquivel <span>Frontend Dev</span></h1>
     </header>
-    <nav>
+    <div class="nav-bg">
+    <nav class="main-nav container">
         <a href="#">Inicio</a>
         <a href="#">Sobre Mi</a>
         <a href="#">Clientes</a>
         <a href="#">Contacto</a>
     </nav>
-    <section>
-        <h2>Diseño y Desarrollo Web Frontend</h2>
-        <svg 
+  </div>
+    <section class="hero">
+      <div class="hero-subtitle">
+        <h2 class="move-front">Diseño y Desarrollo Web Frontend</h2>
+        <svg class="move-front"
           xmlns="http://www.w3.org/2000/svg" 
           class="icon icon-tabler icon-tabler-keyboard" 
           width="84" 
@@ -39,14 +48,18 @@
             <line x1="18" y1="14" x2="18" y2="14.01" />
             <line x1="10" y1="14" x2="14" y2="14" />
           </svg>
-          <p>Torreòn, Coahuila, Mexico</p>
-          <a href="#">Contactar</a>
+        </div>
+          <p class="move-front">Torreòn, Coahuila, Mexico</p>
+          <a href="#" class="move-front btn">Contactar</a>
     </section>
+    <div class="container shadow">
     <main>
-        <section>
+        <section class="services">
             <h2>Mis Servicios</h2>
-            <div>
+            <div class="services-cards">
+            <div class="card">
             <h3>Diseño Web</h3>
+            <div class="icon-container">
             <svg xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-layout-list"
               width="40"
@@ -61,14 +74,14 @@
                 <rect x="4" y="4" width="16" height="6" rx="2" />
                 <rect x="4" y="14" width="16" height="6" rx="2" />
               </svg>
+            </div>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Nobis doloremque dolore, aspernatur voluptatum nemo consequatur 
-                expedita eligendi obcaecati deserunt in pariatur veniam eaque 
-                nisi iure magni debitis at incidunt itaque?
+                
               </p>
             </div>
-            <div>
+            <div class="card">
                 <h3>Aplicaciones Web</h3>
+                <div class="icon-container">
                 <svg xmlns="http://www.w3.org/2000/svg" 
                   class="icon icon-tabler icon-tabler-world" 
                   width="40" 
@@ -103,14 +116,14 @@
                     <line x1="14" y1="7" x2="20" y2="7" />
                     <line x1="17" y1="4" x2="17" y2="10" />
                   </svg>
+                </div>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nobis doloremque dolore, aspernatur voluptatum nemo consequatur 
-                    expedita eligendi obcaecati deserunt in pariatur veniam eaque 
-                    nisi iure magni debitis at incidunt itaque?
+                    
                   </p>
              </div>
-             <div>
+             <div class="card">
                     <h3>E-commerce</h3>
+                    <div class="icon-container">
                     <svg xmlns="http://www.w3.org/2000/svg" 
                       class="icon icon-tabler icon-tabler-shopping-cart" 
                       width="40" 
@@ -127,44 +140,48 @@
                         <path d="M17 17h-11v-14h-2" />
                         <path d="M6 5l14 1l-1 7h-13" />
                       </svg>
+                    </div>
                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nobis doloremque dolore, aspernatur voluptatum nemo consequatur 
-                        expedita eligendi obcaecati deserunt in pariatur veniam eaque 
-                        nisi iure magni debitis at incidunt itaque?
+                        
                       </p>
                </div>
+              </div>
         </section>
         
     </main>
-    <section>
+  
+    <section class="form-container">
         <h2>Contacto</h2>
         <form>
             <fieldset>
              <legend>
-                Contactame llenando todos los campos del formulario
+                formulario de contacto
              </legend>
-             <div>
+             <div class="form-section1">
+             <div class="input-group half-width">
              <label>Nombre</label>
              <input type="text" placeholder="Tu Nombre" />
             </div>
-            <div>
+            <div class="input-group half-width">
                 <label>Telefono</label>
                 <input type="text" placeholder="Tu Telefono" />
                </div>
-               <div>
+              </div>
+               <div class="input-group">
                 <label>Correo</label>
                 <input type="email" placeholder="Tu email" />
                </div>
-               <div>
+               <div class="input-group">
                 <label>Mensaje</label>
-                    <textarea cols="50" rows="5">
-
-                    </textarea>
+                    <textarea cols="50" rows="5"></textarea>
                 </div>
-                <input type="submit" value="Enviar"/>
+                <div class="btn-area">
+                <input type="submit" value="Enviar" class="btn send-btn" />
+              </div>
             </fieldset>
         </form>
     </section>
+  </div>
     <footer>
         <p>Todos los derechos reservados © Javier Esquivel 2022</p> 
     </footer>
